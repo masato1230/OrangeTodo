@@ -49,11 +49,36 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:text="There are 33 todo today"
-                    android:paddingLeft="20dp"
+                    android:id="@+id/todo_today_count"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:paddingLeft="20dp"
+                    android:text="There are 33 todo today"
                     app:layout_constraintTop_toBottomOf="@+id/toolbar_title" />
+
+                <ImageView
+                    android:id="@+id/list_show_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/transparent_white_button_background"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:layout_anchorGravity="bottom|end"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/todo_today_count" />
+
+                <ImageView
+                    android:id="@+id/card_show_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/transparent_white_button_background"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:layout_anchorGravity="bottom|end"
+                    app:layout_constraintStart_toEndOf="@+id/list_show_button"
+                    app:layout_constraintTop_toBottomOf="@+id/todo_today_count" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -63,14 +88,5 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_scrolling" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
