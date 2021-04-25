@@ -9,5 +9,5 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".TodoListFragment"
-    tools:listitem="@layout/fragment_todo_list" />
+    android:background="@color/white_smoke"
+    tools:context=".TodoListFragment" />

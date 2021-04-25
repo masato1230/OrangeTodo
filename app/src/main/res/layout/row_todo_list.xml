@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white_smoke"
+    android:padding="10dp"
+    android:layout_height="120dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_list_background"
+        android:background="@drawable/row_todo_list_red_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_list_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:background="@drawable/row_todo_list_orange_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/row_list_white_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
