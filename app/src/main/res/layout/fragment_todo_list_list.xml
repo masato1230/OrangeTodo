@@ -6,8 +6,5 @@
     android:name="com.jp_funda.orangetodo.TodoListFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    android:background="@color/white_smoke"
     tools:context=".TodoListFragment" />
